@@ -3,7 +3,10 @@ App.MessagesController = Ember.ArrayController.extend({
 
 	add: function() {
 		var transaction = this.get('store').transaction();
-        var message = transaction.createRecord(App.Message, { body: this.get('messageBody') });
+        var message = transaction.createRecord(App.Message, { 
+        	body: this.get('messageBody'),
+        	timestamp: new Date() 
+        });
         transaction.commit();
 
 		this.set('messageBody', "");

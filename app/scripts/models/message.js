@@ -12,7 +12,7 @@ App.Message = DS.Model.extend({
   	if (minutes < 10)
   		minutes = "0" + minutes;
 
-  	return "(" + timestamp.getHours() + ":" + minutes + " " + timestamp.getDate() + "/" + month + "/" + timestamp.getFullYear() + ")";
+  	return timestamp.getDate() + "/" + month + "/" + timestamp.getFullYear() + " " + timestamp.getHours() + ":" + minutes;
   }.property('timestamp')
 
 });
