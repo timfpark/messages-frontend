@@ -1,5 +1,5 @@
 DS.RESTAdapter.reopen({
-  url: "http://localhost:3030"
+  url: "http://messages-be2.azurewebsites.net"
 });
 
 App.Store = DS.Store.extend({
