@@ -1,28 +1,28 @@
 {{#if controller.haveMessages}}
 
-	<ul style="list-style-type: none;">
+    <ul style="list-style-type: none;">
 
-	  {{#each message in controller}}
-	    <li>
-	        {{message.body}}: {{message.timestampString}}
-	    </li>
-	  {{/each}}
+      {{#each message in controller}}
+        <li>
+            {{message.timestampString}}: {{message.body}} 
+        </li>
+      {{/each}}
 
-	</ul>
+    </ul>
 
 {{else}}
 
-  <!-- null state message -->
-  <p>(No messages yet.)</p>
+    <!-- null state message -->
+    <p>(No messages yet.)</p>
 
 {{/if}}
 
 <div class="input-append">
-  {{view Ember.TextField valueBinding="messageBody" 
-  						 placeholder="Compose new message..." 
-  						 classNames="span8"}}
+    {{view Ember.TextField valueBinding="messageBody" 
+                           placeholder="Compose new message..." 
+                           classNames="span8"}}
 
-  <button class="btn btn-primary" {{action "add" target="controller"}}>Add</button>
+    <button class="btn btn-primary" {{action "add" target="controller"}}>Add</button>
 </div>
 
 <br/>
