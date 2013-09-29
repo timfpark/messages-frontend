@@ -1,0 +1,7 @@
+#!/bin/bash
+
+grunt build
+cd ../messages-deploy
+find * -exec git rm -r {} \;
+cp -r ../messages-fe/dist/* .
+git add -A
