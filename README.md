@@ -10,7 +10,7 @@ This application utilizes the [Yeoman](http://yeoman.io) frontend workflow syste
 
 We're using an ember.js application in this sample, so also install the generator for this application type:
 
-`npm install -g generator-emberjs`
+`npm install -g generator-ember`
 
 Then, if you want to start clean with your own ember.js app, do:
 
