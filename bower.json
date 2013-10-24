@@ -2,12 +2,11 @@
   "name": "messages-frontend",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "~1.9.1"
-    ,
+    "ember": "1.0.0",
+    "ember-data-shim": "*",
+    "handlebars": "1.0.0",
+    "jquery": "~1.9.1",
     "bootstrap-sass": "~2.3.1"
-    
-  },
-  "resolutions": {
   },
   "devDependencies": {
     "ember-mocha-adapter": "0.1.1"
