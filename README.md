@@ -49,8 +49,7 @@ Before deploying messages you first need to build the deployment assets that hav
 
 `grunt build`
 
-This should build a `dist` directory at the top level of this project with the assets that need to be deployed.  I've
-included a script that copies this to a deployment Git repo and readies it for deployment.  
+This should build a `dist` directory at the top level of this project with the assets that need to be deployed on your static web server (IIS, Apache, NGINX). I've included a script that copies this to a deployment Git repo and readies it for deployment.  
 
 If this is your first time deploying, create this deployment directory at the same level as messages-frontend called messages-deploy and 
 run `git init` in it to initialize a git repo.
